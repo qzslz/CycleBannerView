@@ -169,12 +169,7 @@ class _ImageBannerViewState extends State<ImageBannerView> {
 
   /// 切换界面
   void _onPageChanged(int index) {
-    var realIndex;
-    if (index >= 5000) {
-      realIndex = (index - 5000) % _itemCount;
-    } else {
-      realIndex = (index + _itemCount - 5000) % _itemCount;
-    }
+    final realIndex = (index - 5000) % _itemCount;
     if (widget.bannerDidScroll != null) {
       widget.bannerDidScroll(realIndex);
     }
