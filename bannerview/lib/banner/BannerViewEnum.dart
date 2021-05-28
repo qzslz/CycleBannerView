@@ -5,9 +5,6 @@ enum IndicatorPosition {
   leftCenter,
   leftTop,
   leftBottom,
-  rightCenter,
-  rightTop,
-  rightBottom
 }
 
 enum IndicatorStyle {
